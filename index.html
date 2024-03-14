@@ -59,10 +59,13 @@
                 </figcaption>
             </figure>
 
+            <h3>Übersichtskarte</h3>
+            <div id="map" style="width:90%; height:600px;"></div>
+
             <h3>Links</h3>
 
             <ul>
-                <li><a href="https://www.volcanoteide.com/de/teide_seilbahn">Volcaano Teide - Teide Seilbahn</a></li>
+                <li><a href="https://www.volcanoteide.com/de/teide_seilbahn">Volcano Teide - Teide Seilbahn</a></li>
                 <li><a href=""></a></li>
             </ul>
         </article>
@@ -74,11 +77,15 @@
                 <a href="https://sebspr.github.io/top/">nächste Etappe</a>
             </nav>
 
-            <div id="map"></div>
+            
 
         </footer>
 
     </main>
+
+    <script>
+        var map = L.map('map').setView([28.27273, -16.64235], 13);
+    </script>
 
 </body>
 
