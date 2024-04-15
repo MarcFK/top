@@ -1,4 +1,4 @@
-/* Java-Script */
+/* Java-Script für die Übersichtskarte*/
 
 let lat = 28.27273;
 let lng = -16.64235;
