@@ -1,3 +1,5 @@
+/* Java-Script */
+
 let lat = 28.27273;
 let lng = -16.64235;
 let zoom = 13
@@ -12,10 +14,14 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+/* Maßstab */
+
 L.control.scale({
     imperial: false,
     maxWidth: 150
 }).addTo(map);
+
+/* Daten für die verorteten Pop-Ups */
 
 let jsonData = {
     "type": "FeatureCollection",
@@ -262,6 +268,8 @@ let jsonData = {
         }
     ]
 }
+
+/* Pop-Ups visualisieren */
 
 L.geoJSON(jsonData, {}).bindPopup(function (layer) {
     console.log(layer.feature.properties)
